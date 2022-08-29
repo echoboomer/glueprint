@@ -1,0 +1,20 @@
+project_name: glueprint
+release:
+  github:
+    owner: echoboomer
+    name: glueprint
+builds:
+  - id: glueprint
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+      - GO111MODULE=on
+    main: main.go
+    binary: glueprint
+    ldflags:
+      - -s -w -X github.com/echoboomer/glueprint/pkg/common.Version={{ .Tag }}
