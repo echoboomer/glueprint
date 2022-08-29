@@ -12,7 +12,15 @@ For the purposes of this demonstration, this tool works against an Ubuntu instan
 
 ## Installation
 
-TODO
+To install `glueprint`:
+
+```bash
+curl -L --output /tmp/glueprint_0.1.0_darwin_amd64.tar.gz https://github.com/echoboomer/glueprint/releases/download/v0.1.0/glueprint_0.1.0_darwin_amd64.tar.gz && \
+tar -xvzf  /tmp/glueprint_0.1.0_darwin_amd64.tar.gz -C /usr/local/bin && \
+chmod +x /usr/local/bin/glueprint
+```
+
+The command will then be available via `glueprint`.
 
 ## Configuration
 
