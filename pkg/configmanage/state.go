@@ -106,7 +106,7 @@ func ReadOneFromState(resource string) map[string]ManagedResource {
 
 	// Handle empty state
 	if string(data) == "{}" {
-		log.Errorf("No entry for %s found in state file")
+		log.Errorf("No entry for %s found in state file", resource)
 		return map[string]ManagedResource{}
 	} else {
 		// Handle populated state
